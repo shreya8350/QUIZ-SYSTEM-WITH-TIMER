@@ -1,95 +1,83 @@
-Java Quiz System – Desktop Application (Swing-Based)
+Java Quiz System – Swing-Based Application
 
-A fully interactive and user-friendly Java Quiz Application built using Java Swing, designed for students, instructors, and beginners to test their knowledge across multiple difficulty levels.
-The project includes user login, admin login, timed quiz sessions, question navigation, auto-evaluation, pie-chart visualization, and result management.
+A fully interactive, GUI-based Java Quiz System built using Java Swing.
+This application provides a complete quiz experience with user login, admin login, multiple difficulty levels, timed quizzes, question navigation, automatic evaluation, and graphical results using a custom pie chart.
 
 ✨ Features
-👤 User Login
+👤 User Module
 
-Simple and intuitive login interface
+User login with username & full-name validation
 
-Username and full-name validation
+Beginner, Intermediate & Advanced level quizzes
 
-Auto-watermark placeholders
+15-minute countdown timer
 
-Dynamic image loading support
+Question navigation panel (jump to any question)
 
-🛠 Admin Panel
+Auto-save selected answers
 
-Dedicated admin login
+Previous / Next navigation
 
-Secure credential validation
+Real-time color indicators:
 
-Access to quiz results (extendable for database integration)
+Yellow → Current question
 
-📚 Multi-Level Quiz System
+Green → Answered
 
-Beginner, Intermediate, and Advanced difficulty levels
+Grey → Unanswered
 
-Randomized question selection from a structured question bank
+🛡 Admin Module
 
-Clean and responsive layout built with GridBagLayout, BorderLayout, and BoxLayout
+Admin login with secure credentials
 
-⏳ Countdown Timer
+Access to quiz results stored in the internal database class
 
-15-minute countdown for every quiz
+View username, full name, level, score, attempts, and performance summary
 
-Auto-submit when time expires
+📝 Quiz Engine
 
-📌 Smart Question Navigation
+Dynamic question loading from a dedicated QuestionBank
 
-Jump to any question using horizontal scrollable buttons
+Shuffles through levels: Beginner | Intermediate | Advanced
 
-Color-coded indicators:
+Tracks:
 
-Yellow: Current Question
+Correct answers
 
-Green: Answered
+Incorrect answers
 
-Gray: Unanswered
+Unattempted questions
 
-📝 Answer Management
+Total attempted
 
-Stores user responses per question
+📊 Result & Analytics
 
-Supports navigating back and changing answers
+Automatic evaluation after submission
 
-Auto-save behavior before switching questions
+Display of:
 
-📊 Result Summary with Pie Chart
+Total score
 
-Final score breakdown: Correct, Incorrect, Unattempted
+Percentage score
 
-Percentage calculation
+Performance breakdown
 
-Graphical Pie Chart visualization
+Custom Pie Chart Renderer
 
-Legend with color-coded keys
+Correct (Green)
 
-Option to return to login screen
+Incorrect (Red)
 
-🧱 Modular Code Structure
+Unattempted (Gray)
 
-The project follows a clean OOP architecture with dedicated classes:
+🧱 Technologies Used
 
-Component	Description
-LoginFrame	User login screen
-AdminLoginFrame	Admin authentication
-LevelSelectionFrame	Difficulty selection
-QuizFrame	Full quiz engine with timer + navigation
-ResultFrame	Score visualization and summary
-QuizDatabase	Stores quiz result entries
-Question & QuestionBank	Question structure and repository
-🚀 Technologies Used
+Java (Core + OOP)
 
-Java 8+
+Java Swing (JFrame, JPanel, Layout Managers)
 
-Java Swing
+AWT (Graphics, Colors, Events)
 
-AWT Layout Managers
+Swing Timer for quiz countdown
 
-Collections Framework
-
-Swing Timer
-
-Custom Graphics (Pie Chart using Graphics2D)
+Custom Drawing for charts
